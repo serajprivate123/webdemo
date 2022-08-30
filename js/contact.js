@@ -1,39 +1,85 @@
-(function ($) {
-    'use strict';
+(function($) {
 
-    var form = $('.contact__form'),
-        message = $('.contact__msg'),
-        form_data;
+	"use strict";
 
-    // Success function
-    function done_func(response) {
-        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-        form.find('input:not([type="submit"]), textarea').val('');
-    }
 
-    // fail function
-    function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-    }
-    
-    form.submit(function (e) {
-        e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func);
-    });
-    
+  // Form
+	var contactForm = function() {
+		if ($('#contactForm').length > 0 ) {
+			$( "#contactForm" ).validate( {
+				rules: {
+					name: "required",
+					subject: "required",
+					email: {
+						required: true,
+						email: true
+					},
+					message: {
+						required: true,
+						minlength: 5
+					}
+				},
+				messages: {
+					name: "Please enter your name",
+					subject: "Please enter your subject",
+					email: "Please enter a valid email address",
+					message: "Please enter a message"
+				},
+				/* submit via ajax */
+				
+				submitHandler: function(form) {		
+					var $submit = $('.submitting'),
+						waitText = 'Submitting...';
+
+					$.ajax({   	
+				      type: "POST",
+				      url: "php/sendEmail.php",
+				      data: $(form).serialize(),
+
+				      beforeSend: function() { 
+				      	$submit.css('display', 'block').text(waitText);
+				      },
+				      success: function(msg) {
+		               if (msg == 'OK') {
+		               	$('#form-message-warning').hide();
+				            setTimeout(function(){
+		               		$('#contactForm').fadeIn();
+		               	}, 1000);
+				            setTimeout(function(){
+				               $('#form-message-success').fadeIn();   
+		               	}, 1400);
+
+		               	setTimeout(function(){
+				               $('#form-message-success').fadeOut();   
+		               	}, 8000);
+
+		               	setTimeout(function(){
+				               $submit.css('display', 'none').text(waitText);  
+		               	}, 1400);
+
+		               	setTimeout(function(){
+		               		$( '#contactForm' ).each(function(){
+											    this.reset();
+											});
+		               	}, 1400);
+			               
+			            } else {
+			               $('#form-message-warning').html(msg);
+				            $('#form-message-warning').fadeIn();
+				            $submit.css('display', 'none');
+			            }
+				      },
+				      error: function() {
+				      	$('#form-message-warning').html("Something went wrong. Please try again.");
+				         $('#form-message-warning').fadeIn();
+				         $submit.css('display', 'none');
+				      }
+			      });    		
+		  		} // end submitHandler
+
+			});
+		}
+	};
+	contactForm();
+
 })(jQuery);

@@ -1,0 +1,65 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,600,700');       
+/* @import url('http://fonts.cdnfonts.com/css/montserrat'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');  
+.career-page{
+    background-color: rgb(214 224 229);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.bg-career {
+    background: url("../images/bg/career.jpg") no-repeat 280% 40%;
+    background-size: cover;
+    padding-top: 20%;
+  }
+.join-our-team {
+    background: url("../images/bg/career-bc.jpg") no-repeat 280% 40%;
+    background-size: cover;
+    padding-top: 20%;
+  }
+/* .row{
+    margin-left: 0;
+    margin-right: 0;
+} */
+.horizontal-line::after {
+    margin: 20px 0 20px 0;
+    width: 80px;
+    height: 1px;
+    border-bottom: 3px solid #2ee7db;
+    display: flex;
+    content: "";
+}
+.heading-top{
+    padding: 10px;
+    /* background-color: rgb(171, 166, 166); */
+}
+
+.first-job{
+    /* margin-top: 2rem; */
+    /* background-color: rgb(124, 160, 124); */
+    justify-content: space-between;
+}
+.first-job span{
+    padding: 15px;
+}
+.first-job .btn-career{
+    background-color: blue;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 10px 25px 10px 25px;
+    margin: 2rem;
+    border-radius: 5px;
+}
+.first-job .btn-career:hover{
+    background-color: #2ee7db;
+    color: #fff;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 0rem;
+}
+
+.content li {
+    /* list-style: none; */
+    list-style-type: disc;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
