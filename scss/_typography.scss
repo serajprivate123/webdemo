@@ -1,7 +1,7 @@
-// Fonts 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
-@import url(https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700);
+/*=== MEDIA QUERY ===*/
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,600,700');       
+/* @import url('http://fonts.cdnfonts.com/css/montserrat'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');  
 
 
 html{
@@ -10,12 +10,10 @@ html{
 
 body {
   line-height: 1.5;
-  font-family: $extra-font;
+  font-family: "Open Sans" sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 17px;
-  // color: #3a405b;
-  color: rgba(0,0,0,0.65);
-
+  font-size: 16px;
+  
 }
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
   font-family: $secondary-font;
@@ -25,6 +23,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
 
 h1 ,.h1{
   font-size: 2.5rem;
+  font-family: "MontserratBold" sans-serif;
   
 }
 
@@ -32,6 +31,7 @@ h2,.h2 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 42px;
+  font-family: "Montserrat" sans-serif;
 }
 
 h3,.h3 {
@@ -54,4 +54,8 @@ h6,.h6 {
 
 p{
   line-height: 30px;
+  font-family: "Open Sans" sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(2, 2, 2) !important;
 }

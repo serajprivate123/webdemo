@@ -1,3 +1,7 @@
+/*=== MEDIA QUERY ===*/
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,600,700');       
+/* @import url('http://fonts.cdnfonts.com/css/montserrat'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');  
 /* header */
 *,
 :after,
@@ -20,6 +24,10 @@ html {
 }
 body {
   overflow-x: hidden;
+}
+.lead {
+  font-size: inherit;
+  font-weight: normal;
 }
 article,
 aside,
@@ -135,9 +143,10 @@ html {
   }
 }
 body {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-style: Regular;
   background-color: #fff;
-  color: #4c4e4d;
+  color: #000;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   vertical-align: baseline;
@@ -190,15 +199,24 @@ h6 {
     font-size: calc(1em * 1.2 / 1.2);
   }
 }
-h1,
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-transform: none;
+  margin-bottom: 0.6rem;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: normal;
   line-height: 1.2;
   text-transform: none;
@@ -268,10 +286,10 @@ blockquote {
   font-style: italic;
 }
 .u-font-body {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .u-font-head {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .u-font-mono {
   font-family: monospace;
@@ -640,7 +658,7 @@ main:focus {
   }
 }
 .c-entry-content {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0 0 1.2rem;
   position: relative;
@@ -656,7 +674,7 @@ main:focus {
 .c-entry-content h4,
 .c-entry-content h5,
 .c-entry-content h6 {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -666,7 +684,7 @@ main:focus {
 .l-feature .c-entry-content,
 .l-package-landing .c-entry-content,
 .l-page .c-entry-content {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .c-entry-content li,
 .c-entry-content p {
@@ -745,7 +763,7 @@ main:focus {
 .c-entry-content .pullquote,
 .c-entry-content .s-share-quote .s-share-quote__text,
 .c-entry-content q {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: normal;
@@ -805,7 +823,7 @@ main:focus {
 .c-entry-content .blockquote,
 .c-entry-content .p-blockquote,
 .c-entry-content blockquote {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: transparent;
   border-left: 3px solid #4f7177;
   font-size: 1em;
@@ -840,7 +858,7 @@ main:focus {
 }
 .c-entry-content .article-caption,
 .c-entry-content .caption {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #d1d1d1;
   color: #626262;
   display: block;
@@ -1873,12 +1891,10 @@ p.m-listicle__credit {
   clear: both;
 }
 .m-ad__native-mobile__header {
-  font-family: "Balto", Helvetica, sans-serif;
-  font-style: ;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   letter-spacing: normal;
   line-height: normal;
-  text-transform: ;
   font-size: 0.8em;
   color: #666666;
   background-color: #d1d1d1;
@@ -1889,8 +1905,7 @@ p.m-listicle__credit {
 .m-ad__native-mobile__header p {
   margin: 0;
   font-size: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   line-height: 2.3;
 }
@@ -1973,12 +1988,10 @@ p.m-listicle__credit {
 }
 .m-ad__native-mobile__byline,
 .native-ad-sponsorship {
-  font-family: "Balto", Helvetica, sans-serif;
-  font-style: ;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   letter-spacing: normal;
   line-height: normal;
-  text-transform: ;
   font-size: 0.8em;
   color: #666666;
   margin: 0 0 8px;
@@ -2029,7 +2042,6 @@ p.m-listicle__credit {
 }
 .c-river .native-ad-linkset-title {
   display: block;
-  font-family: "Balto", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -2383,7 +2395,7 @@ body.search .m-ad__sponsorship-message dfp_ad-wrapper--is-filled {
   background: #e9e7e8;
 }
 .p-data-table {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -2421,7 +2433,7 @@ body.search .m-ad__sponsorship-message dfp_ad-wrapper--is-filled {
   color: #4c4e4d;
 }
 .p-data-table td.title {
-  font-family: "Balto", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -2436,7 +2448,7 @@ body.search .m-ad__sponsorship-message dfp_ad-wrapper--is-filled {
   text-align: left;
 }
 .p-data-table__meta {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #d1d1d1;
   color: #626262;
   display: block;
@@ -2485,7 +2497,7 @@ body.search .m-ad__sponsorship-message dfp_ad-wrapper--is-filled {
   display: inline;
 }
 .p--has-dropcap .dropcap {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 5.9em;
@@ -2643,7 +2655,7 @@ body.search .m-ad__sponsorship-message dfp_ad-wrapper--is-filled {
 .c-entry-content a.p-button,
 .c-entry-content button,
 .p-button {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   background-color: #4f7177;
   border: 0;
@@ -3075,7 +3087,7 @@ body.gallery-full-screen {
 .p-badge {
   -webkit-transition: color 0.1s, background-color 0.1s, fill 0.1s;
   transition: color 0.1s, background-color 0.1s, fill 0.1s;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -3185,7 +3197,7 @@ body.gallery-full-screen {
   text-align: center;
 }
 .p-dek {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -3253,7 +3265,7 @@ body.gallery-full-screen {
   font-size: 0.9em;
 }
 .p-counter-link {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -3408,7 +3420,7 @@ iframe[src*="soundcloud.com"]:not([height]) {
   width: 100%;
 }
 .p-comment-notification {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -3463,7 +3475,7 @@ iframe[src*="soundcloud.com"]:not([height]) {
 .p-comment-notification__unread {
   color: #b1b3b1;
   display: none;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -3722,7 +3734,7 @@ p.p-large-text {
   }
 }
 .c-breaking-news-single-line__label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -3791,7 +3803,7 @@ p.p-large-text {
   }
 }
 .c-breaking-news__label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -3882,7 +3894,7 @@ p.p-large-text {
   }
 }
 .c-byline {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -4200,7 +4212,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   }
 }
 .c-entry-group-labels {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -4680,7 +4692,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   position: relative;
 }
 .c-video-embed__meta {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #d1d1d1;
   color: #626262;
   display: block;
@@ -4722,7 +4734,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   font-size: 0.75em;
 }
 .c-video-embed__cta {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -4987,7 +4999,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
 }
 .c-entry-box__blurb {
   display: none;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 0.75em;
   margin-bottom: 0;
 }
@@ -5072,7 +5084,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   max-width: 120px;
 }
 .c-entry-box__ad-eyebrow {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -5175,7 +5187,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   display: none;
 }
 .c-entry-box__date {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -5192,7 +5204,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   text-transform: none;
 }
 .c-entry-box__label-community {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -5615,7 +5627,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   text-transform: uppercase;
   margin-bottom: -0.3rem;
   color: #4c4e4d;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -6129,7 +6141,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   display: flex;
 }
 .c-entry-box--compact__time {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -6148,7 +6160,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
 }
 .c-entry-box--compact--featured:not(.c-entry-box--compact--hero)
   .c-entry-box--compact__title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -6170,7 +6182,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
 }
 .c-entry-box--compact--pq:not(.c-entry-box--compact--hero)
   .c-entry-box--compact__pull-quote {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: normal;
@@ -6188,7 +6200,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
 }
 .c-entry-box--compact__community,
 .c-entry-box--compact__labels {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -6242,7 +6254,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   fill: #4f7177;
 }
 .c-entry-box--compact__numeric-order {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -6277,7 +6289,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   }
 }
 .c-entry-box--compact__fanshot-label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -6329,7 +6341,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   margin-bottom: 0;
 }
 .c-entry-box--compact__fanshot-content blockquote {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -6349,7 +6361,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   content: "– ";
 }
 .c-entry-box--compact__fanshot-content__link {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -6782,7 +6794,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   }
 }
 .c-hub-hero-stream__date {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -6794,7 +6806,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   margin-bottom: 4px;
 }
 .c-hub-hero-stream__label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -7339,7 +7351,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   display: block;
 }
 .c-entry-corrections__timestamp {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ____font-default-style;
   font-weight: ____font-default-weight;
   letter-spacing: ____font-default-letter-spacing;
@@ -7356,7 +7368,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   }
 }
 .c-entry-corrections__text {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: ;
@@ -7365,7 +7377,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   font-size: 0.9em;
 }
 .c-entry-corrections__actions {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ____font-default-style;
   font-weight: ____font-default-weight;
   letter-spacing: ____font-default-letter-spacing;
@@ -7703,7 +7715,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   margin-right: auto;
 }
 .e-image__meta {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #d1d1d1;
   color: #626262;
   display: block;
@@ -7986,7 +7998,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   margin: 0;
 }
 .c-entry-hero--feature .c-page-title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -8623,7 +8635,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   margin-bottom: 1.2rem;
 }
 .c-entry-sidebar {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   background-color: #e9e7e8;
   color: #4c4e4d;
   font-size: 0.9em;
@@ -8646,7 +8658,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   color: #3b5458;
 }
 .c-entry-update-bar {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -8687,7 +8699,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   }
 }
 .c-entry-update-bar__updates-number {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -8743,12 +8755,12 @@ a:hover .c-byline .c-entry-stat--words__unread {
   margin: 0 auto 12px;
 }
 .c-feed .c-feed__heading {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 28px;
   margin-bottom: 8px;
 }
 .c-feed .c-feed-feed__blurb {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 20px;
   margin-bottom: 16px;
 }
@@ -8786,7 +8798,7 @@ a:hover .c-byline .c-entry-stat--words__unread {
   margin-bottom: 12px;
 }
 .c-feed.has-feed-items .c-feed-inner__body ol li {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 20px;
   list-style-type: none;
   margin-bottom: 12px;
@@ -9385,7 +9397,7 @@ html.is-nav-list-active body {
   display: none;
 }
 .c-nav-list {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 0.65em;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -9917,7 +9929,7 @@ html.is-nav-list-active body {
   text-transform: uppercase;
 }
 .c-global-header__links {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -10267,7 +10279,7 @@ html.is-nav-list-active body {
   fill: #262727;
 }
 .c-global-header__login-menu {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   background-color: #fff;
   display: none;
   font-size: 0.65em;
@@ -10381,7 +10393,7 @@ html.is-nav-list-active body {
   position: relative;
 }
 .c-group-disclosure-ecomm .c-group-discolure-ecomm__text {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -10758,7 +10770,7 @@ a.c-social-buttons__republish:hover {
   margin-top: 16px;
 }
 .c-group-header__disclosure {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   max-width: 546px;
   margin: 16px auto;
   display: block;
@@ -10777,7 +10789,7 @@ a.c-social-buttons__republish:hover {
   max-width: 1080px;
   margin: 0 auto;
   background-color: #e9e7e8;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -11057,7 +11069,7 @@ a.c-social-buttons__republish:hover {
   display: none;
 }
 .c-masthead__dateline {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -11178,7 +11190,7 @@ a.c-social-buttons__republish:hover {
   font-weight: 700;
 }
 .c-newsletter_signup_box {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   padding-top: 16px;
   margin-bottom: 32px;
   text-align: center;
@@ -11223,7 +11235,7 @@ a.c-social-buttons__republish:hover {
 }
 .c-entry-content h3.c-newsletter_signup_box__title,
 h3.c-newsletter_signup_box__title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -11533,7 +11545,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-off-platform-publish__instructions {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 .c-off-platform-publish__html textarea,
@@ -11909,7 +11921,7 @@ h3.c-newsletter_signup_box__title {
   .c-package-cover__entry--pullquote
   .c-entry-box--compact__pull-quote {
   width: 100% !important;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: normal;
@@ -12602,7 +12614,7 @@ h3.c-newsletter_signup_box__title {
   width: 20px;
 }
 .c-package-subnav .c-package-subnav__sub-title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ____font-default-style;
   font-weight: ____font-default-weight;
   letter-spacing: ____font-default-letter-spacing;
@@ -12657,7 +12669,7 @@ h3.c-newsletter_signup_box__title {
   fill: #4f7177;
 }
 .c-package-subnav .collapsible .c-package-subnav__collapse-control__length {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ____font-default-style;
   font-weight: ____font-default-weight;
   letter-spacing: ____font-default-letter-spacing;
@@ -13033,7 +13045,7 @@ h3.c-newsletter_signup_box__title {
   .c-package-subnav__text {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ____font-default-style;
   font-weight: ____font-default-weight;
   letter-spacing: ____font-default-letter-spacing;
@@ -13161,7 +13173,7 @@ h3.c-newsletter_signup_box__title {
   text-align: right;
 }
 .c-piano__login-controls_top {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: ;
@@ -13395,7 +13407,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-product-card .c-product-card__main-image-description {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
   margin-bottom: 8px;
 }
@@ -13406,7 +13418,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-product-card .c-product-card__main-headline {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 2em;
   margin-bottom: 0;
 }
@@ -13424,7 +13436,7 @@ h3.c-newsletter_signup_box__title {
   color: #333;
 }
 .c-product-card .c-product-card__main-price {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   margin-bottom: 4px;
 }
 .c-product-card .c-product-card__main-price-list {
@@ -13481,7 +13493,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-product-card .c-product-card__main-description p {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 1em;
   margin-bottom: 0;
 }
@@ -13534,7 +13546,7 @@ h3.c-newsletter_signup_box__title {
   border: 2px solid #4f7177;
   color: #ffffff;
   display: block;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 0.76rem;
   font-weight: bold;
   line-height: 1.1;
@@ -13782,7 +13794,7 @@ h3.c-newsletter_signup_box__title {
 .c-promo-box {
   text-align: center;
   border: none;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   padding: 48px 16px;
 }
 @media (min-width: 728px) {
@@ -13795,7 +13807,7 @@ h3.c-newsletter_signup_box__title {
   margin: 0 auto;
 }
 .c-promo-box h3 {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-size: 35px;
   font-weight: bold;
 }
@@ -13809,7 +13821,7 @@ h3.c-newsletter_signup_box__title {
   margin: 0 auto 24px;
 }
 .c-promo-box .c-promo-box__link {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   background-color: #4f7177;
   border: 0;
@@ -13955,7 +13967,7 @@ h3.c-newsletter_signup_box__title {
   z-index: 900;
 }
 .c-recirc-module__label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -13984,8 +13996,8 @@ h3.c-newsletter_signup_box__title {
   margin-bottom: 2.4em;
 }
 .c-related-list__head {
-  font-family: "HarrietDisplayBlack", Helvetica, sans-serif;
-  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  font-style: regular;
   font-weight: normal;
   letter-spacing: 0.02em;
   line-height: 1.2;
@@ -13997,9 +14009,9 @@ h3.c-newsletter_signup_box__title {
   padding: 0 0 8px 0;
 }
 .c-related-list__subhead {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: normal;
   line-height: 1.2;
   text-transform: none;
@@ -14016,7 +14028,7 @@ h3.c-newsletter_signup_box__title {
   color: #333;
 }
 .c-related-list ul {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: inherit;
   letter-spacing: normal;
@@ -14354,9 +14366,9 @@ h3.c-newsletter_signup_box__title {
   .c-entry-box--compact__title,
 .c-branded-river .c-entry-box--compact--video .c-entry-box--compact__title,
 .c-branded-river .c-entry-box--compact .c-entry-box--compact__title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: normal;
   line-height: 1.2;
   text-transform: none;
@@ -14410,7 +14422,7 @@ h3.c-newsletter_signup_box__title {
   display: none;
 }
 .c-scorecard {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   background-color: #e9e7e8;
   clear: both;
   margin-bottom: 1.2rem;
@@ -14473,7 +14485,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-scorecard__additional-info {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   background-color: #fff;
   font-weight: 400;
   margin: 0 5px;
@@ -14698,7 +14710,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-scorecard__specs-label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -14712,7 +14724,7 @@ h3.c-newsletter_signup_box__title {
   font-size: 0.9em;
 }
 .c-scorecard__specs-score {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -15499,7 +15511,7 @@ h3.c-newsletter_signup_box__title {
 .c-subnav,
 .c-subnav .c-subnav__parent {
   color: #4f7177;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -16476,7 +16488,7 @@ h3.c-newsletter_signup_box__title {
   margin-bottom: 4px;
 }
 .c-user-card__title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -16574,7 +16586,7 @@ h3.c-newsletter_signup_box__title {
 }
 .c-user-membership-list__item--logo span {
   display: inline-block;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -16752,7 +16764,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-entry-box-hero .c-entry-box-base__time {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -16770,7 +16782,7 @@ h3.c-newsletter_signup_box__title {
   margin-bottom: 0;
 }
 .c-entry-box-hero .c-entry-box-base__fanshot-content blockquote {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -16793,7 +16805,7 @@ h3.c-newsletter_signup_box__title {
   content: "– ";
 }
 .c-entry-box-hero .c-entry-box-base__fanshot-content .c-entry-box-base__link {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -16836,7 +16848,7 @@ h3.c-newsletter_signup_box__title {
 }
 .c-entry-box-hero .c-entry-box-base__community,
 .c-entry-box-hero .c-entry-box-base__labels {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -16897,8 +16909,8 @@ h3.c-newsletter_signup_box__title {
   fill: #4f7177;
 }
 .c-entry-box-hero .c-entry-box-base__numeric-order {
-  font-family: "Balto", Helvetica, sans-serif;
-  font-style: normal;
+ font-family: "Open Sans", sans-serif;
+  font-style: Regular;
   font-weight: 700;
   letter-spacing: normal;
   line-height: 1.2;
@@ -16935,7 +16947,7 @@ h3.c-newsletter_signup_box__title {
   }
 }
 .c-entry-box-hero .c-entry-box-base__fanshot-label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -17188,7 +17200,7 @@ img.cross-post-logo {
   }
 }
 .c-action-box strong {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
 }
 .c-action-box strong span {
   color: #4f7177;
@@ -17775,7 +17787,7 @@ p.c-credit-paragraph {
   font-style: italic;
 }
 .c-image-caption {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #d1d1d1;
   color: #626262;
   display: block;
@@ -18058,7 +18070,7 @@ p.c-credit-paragraph {
   margin: 0;
 }
 .c-story-box__byline {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   margin: auto 0;
   padding-left: 16px;
 }
@@ -18085,7 +18097,7 @@ p.c-credit-paragraph {
 }
 .c-action-box__button a,
 .c-story-box__button a {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   background-color: #4f7177;
   border: 0;
@@ -18173,7 +18185,7 @@ p.c-credit-paragraph {
   }
 }
 .c-animated-pullquote q {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: normal;
@@ -18355,7 +18367,7 @@ p.c-credit-paragraph {
   z-index: 1;
 }
 .c-pullquotes-list__quote h2 {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: normal;
@@ -18372,7 +18384,7 @@ p.c-credit-paragraph {
 }
 .c-pullquotes-list__quote-attribute {
   color: #615e68;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 .c-pullquotes-list__quote:first-child {
@@ -18473,7 +18485,7 @@ p.c-credit-paragraph {
   max-width: 300px;
 }
 .c-rating-box__title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -18605,7 +18617,7 @@ p.c-credit-paragraph {
   border-bottom: 0;
 }
 .c-read-more p.c-read-more__intro {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-size: 0.75em;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -18622,7 +18634,7 @@ p.c-credit-paragraph {
   display: none;
 }
 .c-snippet-river .c-entry-box__blurb {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   display: block;
   font-size: 1em;
 }
@@ -18783,7 +18795,7 @@ p.c-credit-paragraph {
 }
 .c-social-count__networks {
   color: #666666;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   margin: 32px 0;
   overflow: auto;
   padding: 0;
@@ -18961,7 +18973,7 @@ p.c-credit-paragraph {
 }
 .c-social-count__network-info h2 {
   color: #626262;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   margin-bottom: 0;
 }
 .c-social-count__network-info p {
@@ -18980,7 +18992,7 @@ p.c-credit-paragraph {
   }
 }
 .c-toh-project-details {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -19006,7 +19018,7 @@ p.c-credit-paragraph {
   }
 }
 .c-toh-project-details .c-toh-project-details__title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -19216,7 +19228,7 @@ p.c-credit-paragraph {
 }
 .c-tv-listing {
   padding: 16px 0;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
 }
 .c-tv-listing #tv-listing > p:first-child,
 .c-tv-listing .c-tv-listing__schedule-title {
@@ -19290,7 +19302,7 @@ p.c-credit-paragraph {
   .c-tv-listing .c-tv-listing__schedule-table th {
     font-weight: 600;
     font-size: 18px;
-    font-family: "Balto", Helvetica, sans-serif;
+   font-family: "Open Sans", sans-serif;
     background-color: #fff;
     text-align: left;
     border-bottom: 2px solid #000;
@@ -19315,7 +19327,7 @@ p.c-credit-paragraph {
   .c-tv-listing tbody td:first-child {
     font-weight: 600;
     font-size: 16px;
-    font-family: "Balto", Helvetica, sans-serif;
+   font-family: "Open Sans", sans-serif;
     border-top: 2px solid #000;
     padding: 8px 12px;
   }
@@ -19454,7 +19466,7 @@ p.c-credit-paragraph {
   margin-bottom: 0;
 }
 .c-rock-community-info .p-rock-sub-head {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -19569,7 +19581,7 @@ p.c-credit-paragraph {
   border: none;
 }
 .c-rock-fanshot-list--item__quote blockquote {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -19587,7 +19599,7 @@ p.c-credit-paragraph {
   content: "– ";
 }
 .c-rock-fanshot-list--item__link {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -19651,7 +19663,7 @@ p.c-credit-paragraph {
   font-size: 24px;
   color: #4f7177;
   margin-top: 0;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -19700,7 +19712,7 @@ p.c-credit-paragraph {
   font-size: 17px;
   font-weight: normal;
   margin-numbered: 8px;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -19767,7 +19779,7 @@ p.c-credit-paragraph {
   font-size: 17px;
   font-weight: normal;
   margin-right: 8px;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -19845,7 +19857,7 @@ p.c-credit-paragraph {
   color: #333;
 }
 .c-rock-list__sub-title {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -19863,7 +19875,7 @@ p.c-credit-paragraph {
 }
 .c-rock-list .native-ad-latest,
 .c-rock-list li {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -20188,7 +20200,7 @@ p.c-credit-paragraph {
   font-size: 0.75em;
 }
 .c-rock-single-entry__label {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -20542,7 +20554,7 @@ p.c-credit-paragraph {
 }
 .c-image-gallery .c-image-gallery__viewer-expand,
 .c-image-gallery .c-image-gallery__viewer-grid {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -20636,7 +20648,7 @@ p.c-credit-paragraph {
   display: inline-block;
 }
 .c-image-gallery__index {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -20897,7 +20909,7 @@ p.c-credit-paragraph {
   }
   .c-image-gallery.full-screen .c-image-gallery__caption strong,
   .c-image-gallery__two-col .c-image-gallery__caption strong {
-    font-family: "Balto", Helvetica, sans-serif;
+   font-family: "Open Sans", sans-serif;
     font-style: ;
     font-weight: 400;
     letter-spacing: normal;
@@ -21095,7 +21107,7 @@ p.c-credit-paragraph {
   margin-bottom: 8px;
 }
 .c-comments__header-titled {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
@@ -21903,7 +21915,7 @@ p.c-credit-paragraph {
   width: 35%;
 }
 .c-comments__new-notification-count strong {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   display: block;
   font-size: 3em;
   line-height: 1;
@@ -22027,7 +22039,7 @@ p.c-credit-paragraph {
 }
 .c-poll__pct {
   color: #4f7177;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: normal;
@@ -22058,7 +22070,7 @@ p.c-credit-paragraph {
   line-height: 1em;
 }
 .c-poll__option-votes {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -22111,7 +22123,7 @@ p.c-credit-paragraph {
   opacity: 1;
 }
 .c-poll__totals-count {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -22162,7 +22174,7 @@ p.c-credit-paragraph {
 }
 .c-interactive-table .paginate_button.next,
 .c-interactive-table .paginate_button.previous {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   background-color: #4f7177;
   border: 0;
@@ -22175,7 +22187,7 @@ p.c-credit-paragraph {
   text-transform: uppercase;
   border-radius: 0;
   font-weight: inherit;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -22247,7 +22259,7 @@ p.c-credit-paragraph {
 .c-interactive-table .dataTables_info,
 .c-interactive-table .dataTables_length,
 .c-interactive-table .dataTables_paginate {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -22415,7 +22427,7 @@ p.c-credit-paragraph {
   display: inline-block;
   font-weight: 700;
   margin-right: 16px;
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
@@ -22433,7 +22445,7 @@ p.c-credit-paragraph {
   display: inline-block;
 }
 .c-buying-guide__filter_value {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -22846,7 +22858,7 @@ p.c-credit-paragraph {
   text-transform: uppercase;
 }
 .chorus-snippet.m-newsletter-signup p {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -22893,7 +22905,7 @@ p.c-credit-paragraph {
   }
 }
 .chorus-snippet.ratingbox {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: ;
   font-weight: 400;
   letter-spacing: normal;
@@ -23073,7 +23085,7 @@ p.c-credit-paragraph {
 }
 .c-entry-box--compact:not(.c-entry-box--compact--hero):not(.c-entry-box--compact--featured)
   .c-byline {
-  font-family: "Balto", Helvetica, sans-serif;
+ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;

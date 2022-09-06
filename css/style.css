@@ -9,13 +9,21 @@ html {
 
 body {
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.65);
+  font-weight: 400;
+  font-style: normal;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1{
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #242424;
+}
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -98,6 +106,12 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 #top-tag{
   margin-top: -20px;
+}
+.typing-heading{
+  margin-left: 35.6em;
+}
+.typing-heading strong{
+ font-size: 50px;
 }
 .typing{
   font-size: 50px;
@@ -231,6 +245,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .blog-item img{
   border-radius: 15px !important;
 }
+.blog-item img:hover{
+  transform: scale(0.9);
+}
 .blog-item{
   border-bottom: none !important;
 }
@@ -249,7 +266,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .section-title p {
   color: #666;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .subtitle {
@@ -272,7 +291,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  background: #000;
+  background-color: #0000006B;
+  
 }
 
 .overly-2, .bg-counter, .cta-block, .latest-blog {
@@ -442,7 +462,7 @@ a:focus {
 }
 
 #navbar .nav-link {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
@@ -556,8 +576,13 @@ ul.dropdown-menu li {
 }
 
 .bg-learn {
-  background: url("../images/bg/learn-with-us.jpg") no-repeat 60% 50%;
+  background: url("../images/bg/learn-with-us.jpg") no-repeat 240% 60%;
   background-size: cover;
+  background-color: #0000006B !important;
+  background-position: center center;
+    padding: 10% 0 10% 0;
+    max-width: 100%;
+    -webkit-background-size: cover;
 }
 
 .slider {
@@ -612,23 +637,53 @@ ul.dropdown-menu li {
 #abt-sec{
   margin-left: 9em;
 }
-.bg-about {
+/* .bg-about {
   position: absolute;
   content: "";
   left: 0px;
   top: 0px;
   width: 45%;
   min-height: 650px;
-  background: url("../images/about/home-8.jpg") no-repeat;
+  background: url("../images/about/abou-home.jpg") no-repeat 280% 50%;
   background-size: cover;
+} */
+.bg-about{
+  background: url("../images/about/abou-home.jpg") no-repeat 240% 60%;
+  background-size: cover;
+  /* background-color: #0000006B !important; */
+    background-position: center center;
+    padding: 10% 0 10% 0;
+    max-width: 100%;
+    -webkit-background-size: cover;
 }
-
 .about-content {
   padding: 20px 0px 0px 80px;
   
 }
-
-
+.mascot{
+  float: left;
+}
+.title-m{
+  color: #fff;
+}
+.title-tag{
+  color: #59edd9;
+}
+.content-list>li{
+  color: #DDD6D6 !important;
+}
+.bm{
+  background-color: transparent;
+    background-image: linear-gradient(50deg, #003AAD 10%, #070F1F 100%);
+}
+#mascot{
+  margin-bottom: 5rem;
+ 
+}
+.txt-left{
+  align-items: center;
+  margin-top: 10rem;
+}
 .about-content h4 {
   font-weight: 600;
 }
@@ -645,7 +700,17 @@ ul.dropdown-menu li {
 }
 .title-about{
   margin-bottom: 20px !important;
-  color: #3fe2dd;
+  color: #1A3073;
+}
+.text-md::after{
+  content:'';
+  position: absolute;
+  background-color: #59edd9;
+  width: 45%;
+  height: 3px;
+  bottom: 10px;
+  left: 25px;
+  right:0;
 }
 .counter-item .counter-stat {
   font-size: 50px;
@@ -978,10 +1043,14 @@ text-align: center;
 .list-inline-item:not(:last-child) {
   margin-right: 0rem;
 }
+.navbar-nav > .active > a{
+  color: #0F71F2 !important;
+  border-bottom: 3px solid #59edd9;
+}
+
 #navbar {
   background: #fff !important;
   box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
-  /* border-bottom: 0.5px solid grey; */
   font-size: 20px;
 }
 #navbar .nav-link {
@@ -1604,6 +1673,14 @@ h3.quote::before {
     text-transform: capitalize;
     border-radius: 30px;
    
+}
+.rm{
+  margin-left: 20rem;
+}
+.rm:hover{
+  background-color: #3fe2dd;
+  color: white;
+  border-radius: 40px;
 }
 .title-a {
   font-weight: bold;
